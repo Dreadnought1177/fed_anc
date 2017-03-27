@@ -1,0 +1,49 @@
+<div id="form-popup">
+      <div class="popup-header">
+        <h2>Subscribe Today</h2>
+      </div>
+      <div class="subscription-form">
+        <form action="#" method="post" id="popup-form">
+          <div class="form-field">
+            <label for="fname">Your First Name</label>
+            <input id="fname" type="text" name="name" >
+          </div>
+          <div class="form-field">
+            <label for="lname">Your Last Name</label>
+            <input id="lname"  type="text" name="lastname" >
+          </div>
+          <div class="form-field full-width">
+            <label for="email">Your Email</label>
+            <input id="email"  type="text" name="email" >
+          </div>
+          <div class="submit-button">
+            <input type="submit" class="btn btn-green" value="GET STARTED" name="">
+          </div>
+        </form>
+        <div class="license-agreement" style="margin-left: -5%">
+        <p>By creating an account, you agree to <a>Ancestery Terms and Conditions</a> and understand that your information will be used in accordance with our <a>Privacy Statement</a>, including that we will send you emails about our service and special offers.</p>
+      </div>
+      </div>
+</div>
+<script type="text/javascript" src="/style/js/jquery.validate.min.js"></script>
+    <script type="text/javascript">
+      // $('.fancybox').fancybox();
+      $('#popup-form').validate({
+        rules: {
+          name: "required",
+          lastname: "required",
+          email: {
+            required: true,
+            email: true
+          }
+        },
+        messages: {
+          name: "Required",
+          lastname: "Required",
+          email: {
+            required: "A Valid Email is required",
+            email: "A Valid Email is required"
+          }
+        }
+      });
+    </script>

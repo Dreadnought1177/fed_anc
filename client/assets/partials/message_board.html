@@ -1,0 +1,11 @@
+<div>
+
+<h1>MESSAGE BOARD</h1>
+<form>
+Messages: <input type='text' ng-model='meep.message.message' > <br>
+<input type="submit" value="Post a message" ng-click='meep.addmessage()' style="margin-left: 7%;margin-top: 1%;" class="btn btn-gray"> <br>
+</form>
+<h1>Messages</h1>
+<div ng-repeat="x in meep.messages">
+	<p>{{x.message}}</p>
+</div>

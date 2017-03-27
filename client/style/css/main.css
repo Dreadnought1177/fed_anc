@@ -1,0 +1,315 @@
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	background: #f1eeea;
+	font-size: 16px;
+}
+html,body{
+	margin: 0;
+}
+.header{
+    background-image: url(../images/header-ng.jpg);
+    background-size: cover;
+    color: #fff;
+    padding: 3px 9px 11px;
+}
+.header .header-title{
+	text-align: center;
+}
+h1,h2,h3,h4,h5{
+	font-weight: 200;
+}
+.header .breadcrumbs{
+
+}
+.header .breadcrumbs a{
+	color: #fff;
+	position: relative;
+	font-size: 16px;
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: middle;
+}
+.header .breadcrumbs a:after{
+	content: '';
+    display: inline-block;
+    width: 10px;
+    height: 18px;
+    background-image: url(../images/right-arrow.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-left: 8px;
+    margin-right: 7px;
+}
+.header .breadcrumbs li:last-child a:after{
+	content: none;
+}
+.header .breadcrumbs ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 1px;
+}
+.header .breadcrumbs li{
+	display: inline-block;
+}
+.header .header-title h1{
+    font-size: 50px;
+    margin: 24px 0;
+    letter-spacing: 0.3px;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.main-content-section{
+    background-color: #f8f7f3;
+    padding-top: 7px;
+    padding-bottom: 3px;
+}
+.main-content-section:after,
+.container:after,
+.subscription-form:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+.white-bg-section{
+	background-color: #ffffff;
+    box-shadow: 0 1px 3px -1px rgba(0,0,0,0.7);
+    border-radius: 10px;
+    padding: 8px 22px 17px;
+    margin-bottom: 20px;
+}
+.submit-button {
+    padding: 0 13px;
+    clear: both;
+}
+.main-content-section .left-side{
+	float: left;
+	width: 800px;
+	padding: 15px;
+}
+input.btn.btn-green {
+    border: none;
+    padding: 7px 13px;
+    font-size: 13px;
+    letter-spacing: -0.2px;
+}
+.main-content-section .right-sidebar{
+    float: left;
+    width: 400px;
+    padding: 15px 21px 15px 6px;
+}
+.right-sidebar .white-bg-section{
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 6px;
+}
+.white-bg-section h3{
+	font-size: 20px;
+    letter-spacing: 0.3px;
+}
+.white-bg-section ul{
+	padding: 0;
+    list-style: none;
+    margin-top: 8px;
+    margin-bottom: 14px;
+}
+.white-bg-section ul li{
+    margin-bottom: 8px;
+}
+.white-bg-section ul li a{
+	text-decoration: none;
+	color: #297494;
+	font-size: 16px;
+}
+a{
+	text-decoration: none;
+	color: #297494;
+}
+.container{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.white-bg-section h1,
+.white-bg-section h2,
+.white-bg-section h3,
+.white-bg-section h4,
+.white-bg-section h5{
+	margin: 0;
+	font-weight: 300;
+}
+.white-bg-section h2{
+	font-size: 30px;
+}
+.white-bg-section p{
+    margin-top: 4px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.white-bg-section img{
+	margin-bottom: 11px;
+}
+.btn{
+	display: inline-block;
+    text-decoration: none;
+    background: #7f7f7f;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+    padding: 5px 14px;
+    font-size: 15px;
+    box-shadow: 0 -4px 5px rgba(0,0,0,0.1) inset;
+    text-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+.btn.btn-green{
+    background-color: #afd663;
+    padding: 11px 15px;
+    margin-bottom: 5px;
+}
+.white-bg-section.off-white{
+	background: #f1eee9;
+}
+.white-bg-section.off-white h3{
+
+}
+.white-bg-section.off-white p{
+    margin-top: 8px;
+    margin-bottom: 13px;
+}
+.white-bg-section:last-child{
+	margin-bottom: 0;
+}
+.footer{
+    text-align: center;
+    font-size: 14px;
+    padding: 7px;
+}
+.footer ul{
+	padding: 0;
+	list-style: none;
+}
+.footer ul li{
+    display: inline-block;
+    margin: 0 7px;
+}
+img{
+	max-width: 100%;
+}
+@media(max-width: 1250px){
+	.container{
+		width: 767px;
+		max-width: 100%;
+	}
+	.main-content-section .left-side,
+	.main-content-section .right-sidebar{
+		width: 100%;
+	}
+	.right-sidebar .white-bg-section{
+	}
+}
+@media(max-width: 667px){
+	.header .breadcrumbs a{
+		font-size: 15px;
+	}
+	.white-bg-section h2 {
+	    font-size: 24px;
+	}
+	body{
+		font-size: 13px;
+	}
+	.white-bg-section p{
+		text-align: justify;
+	}
+	.white-bg-section ul li a{
+		font-size: 13px;
+	}
+}
+.fancybox-skin{
+	background: #f8f7f3;
+	padding: 0 !important;
+}
+#form-popup .popup-header{
+    background: #fff;
+    padding: 15px 19px;
+    border-radius: 4px 4px 0 0;
+}
+.popup-header h2{
+    font-weight: 600;
+    margin: 0;
+    font-size: 16px;
+}
+.fancybox-close{
+	top: -14px;
+    right: -14px;
+}
+.subscription-form .form-field{
+    float: left;
+    width: 50%;
+    padding: 0 15px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.subscription-form .form-field label{
+	font-weight: 600;
+	font-size: 16px;
+	display: block;
+}
+.subscription-form .form-field label.error{
+	position: absolute;
+    color: red;
+    top: -1px;
+    right: 19px;
+}
+.subscription-form .form-field input{
+    width: 100%;
+    border: 1px solid #cccccc;
+    box-shadow: 0 0 10px -4px rgba(0,0,0,0.3) inset;
+    height: 30px;
+    border-radius: 4px;
+    outline: none;
+    padding: 5px 10px;
+}
+.subscription-form .form-field input:focus{
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(255,0,0,.075), 0 0 8px rgba(255,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(255,0,0,.075), 0 0 8px rgba(255,175,233,.6);
+}
+.subscription-form .form-field input.error{
+	border-color: red;
+	-webkit-box-shadow: inset 0 1px 1px rgba(255,0,0,.075), 0 0 8px rgba(255,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(255,0,0,.075), 0 0 8px rgba(255,175,233,.6);
+}
+.subscription-form {
+    padding: 20px 5px 0;
+}
+.subscription-form .form-field.full-width{
+	width: 100%;
+}
+.license-agreement {
+    padding: 0 19px;
+}
+.license-agreement p{
+	margin-top: 10px;
+    font-size: 15px;
+    padding-left: 20px;
+}
+div#form-popup{
+	width: 600px;
+	max-width: 100%;
+}
+@media(max-width: 667px){
+	.subscription-form .form-field{
+		width: 100%;
+	}
+}
+
+.note{
+    font-size: 10px;
+    color: red;
+    display: inline;
+}
